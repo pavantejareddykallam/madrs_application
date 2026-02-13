@@ -1,0 +1,42 @@
+name: aliyousefi_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Fonts
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.3.2
+
+  # ------------------------------------------------------------
+  # 🔥 FULLY COMPATIBLE FIREBASE VERSIONS (DOWNGRADED)
+  # ------------------------------------------------------------
+  firebase_core: ^2.25.4
+  firebase_auth: ^4.15.4
+  cloud_firestore: ^4.17.3
+  firebase_storage: ^11.5.4
+  firebase_messaging: ^14.7.10   # ✔ works with core 2.x + firestore 4.x
+
+  # Utilities
+  excel: ^2.1.0
+  path_provider: ^2.1.4
+  csv: ^6.0.0
+  shared_preferences: ^2.5.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/brain.png
